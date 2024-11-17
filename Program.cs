@@ -12,8 +12,6 @@ builder.Services
     .AddQueryType<Query>()     
     .AddFiltering()
     .AddSorting();
-
-
 var app = builder.Build();
 
 app.MapGraphQL("/graphql");

@@ -29,7 +29,7 @@ dotnet restore
 dotnet run
 ```
 
-Visita `https://localhost:5001/graphql` para acceder a Banana Cake Pop (UI de GraphQL)
+Visita `https://localhost:5180/graphql` para acceder a Banana Cake Pop (UI de GraphQL)
 
 ## 📋 Ejemplos incluidos
 
@@ -53,6 +53,7 @@ public class ProductType : ObjectType<ProductDto>
         descriptor.Field(p => p.Id).Description("ID único del producto");
         descriptor.Field(p => p.Name).Description("Nombre del producto");
         descriptor.Field(p => p.Price).Description("Precio en USD");
+        //...
     }
 }
 ```
@@ -67,6 +68,7 @@ public class ProductType : ObjectType<ProductDto>
     │   └── Extensions/     # Extensiones y configuraciones
     ├── Services/           # Servicios de la aplicación
     └── Models/             # DTOs y modelos
+    └── ExampleQueries/     # Ejemplos de queries
 
 ```
 
@@ -74,7 +76,7 @@ public class ProductType : ObjectType<ProductDto>
 
 - [Documentación de Hot Chocolate](https://chillicream.com/docs/hotchocolate)
 - [GraphQL](https://graphql.org/)
-- [Ejemplos de Queries](./examples.md)
+- [Ejemplos de Queries](./ExampleQueries)
 
 ## 🤝 Contribuir
 
@@ -90,17 +92,8 @@ public class ProductType : ObjectType<ProductDto>
 
 Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
-## ✨ Agradecimientos
-
-- [Hot Chocolate](https://chillicream.com/) por su increíble framework
-- La comunidad de .NET por su continuo apoyo
-
----
-
 ¿Te resultó útil? ¡Dale una ⭐️ al repo!
 
 ## 📫 Contacto
-
 Jhon Castrillón - [@tulinkedin](https://www.linkedin.com/in/jhon-castrillon-a20540101/)
-
 Link del Proyecto: [https://github.com/jhoncastrillon9/graphql-hotchocolate-demo](https://github.com/jhoncastrillon9/graphql-hotchocolate-demo)
